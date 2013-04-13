@@ -21,6 +21,6 @@ module Busser
   module Shunit2
 
     # Version string for the Shunit2 Busser runner plugin
-    VERSION = "0.1.0.dev"
+    VERSION = "0.1.0"
   end
 end

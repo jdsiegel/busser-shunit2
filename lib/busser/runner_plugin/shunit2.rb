@@ -43,11 +43,11 @@ class Busser::RunnerPlugin::Shunit2 < Busser::RunnerPlugin::Base
 
     inside(dest_path) do
       create_file("runner") do
-        """
-        #!/bin/bash
-        . $1
-        . $2
-        """
+        <<-EOF
+#!/bin/bash
+. $1
+. $2
+EOF
       end
       chmod("runner", 0755)
     end
